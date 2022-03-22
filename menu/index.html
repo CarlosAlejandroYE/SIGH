@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Menú</title>
+    <!-- CSS Fontawesome -->
+    <link rel="short icon" href="images/logo.png">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+      integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css?v" />
+  </head>
+  <body>
+ 
+     <input type="hidden" id="idUsu" name="idUsu">
+
+    <nav class="nav-main">
+      <!-- btnes -->
+      <input type="checkbox" class="nav-main__btnes-collapse" id="nav-main__checkbox">
+      <label for="nav-main__checkbox" class="nav-main__btnes-collapse-icon">
+        <span class="icon-nav"></span>
+        <span class="icon-nav"></span>
+        <span class="icon-nav"></span>
+      </label>
+      <!-- caja azul -->
+      <div class="nav-main__btnes-collapse-bg">
+        <br>
+      <p class="letras">Menú</p>
+      </div>
+      <!-- barra Rsociales -->
+      <div class="redes-sociales">
+        <!-- fb -->
+        <a href="" target="_blank" class="redes-sociales__link-item">
+        <i class="fab fa-facebook-f"></i>
+        </a>
+        <!-- tw -->
+        <a href="" target="_blank" class="redes-sociales__link-item">
+        <i class="fab fa-chrome"></i>
+        </a>
+        <!-- ig -->
+        <a href="" target="_blank" class="redes-sociales__link-item">
+        <i class="fab fa-instagram"></i>
+        </a>
+        <!-- wa -->
+        <a href="" target="_blank" class="redes-sociales__link-item">
+        <i class="fab fa-twitter"></i>
+        </a>
+      </div>
+
+
+      <!-- menu -->
+      <div class="nav-main__menu">
+			<a class="nav-main__link-item" onclick="Interfaz('ECG');">
+			<i class="fas fa-database"></i>
+			Estado de caja general
+			</a>
+			<a class="nav-main__link-item" onclick="Interfaz('RE')">
+			<i class="fas fa-user-edit"></i>
+			Registro de entradas
+			</a>
+			<a style="cursor:pointer;"  class="task-pass nav-main__link-item" onclick="Interfaz('RS')">
+			<i class="fas fa-key"></i>
+			Registro de salidas
+			</a>
+			<a style="cursor:pointer;"  class="task-usuarios nav-main__link-item" onclick="Interfaz('GR')">
+			<i class="fas fa-users"></i>
+			Generar reportes
+			</a>
+			<a style="cursor:pointer;" class="task-sesion nav-main__link-item" onclick="cerrarsesion();">
+			<i class="fas fa-sign-out-alt"></i>
+			Cerrar sesion
+			</a>
+			<br><br><br><br><br><br><br><br><br>
+			<p class="desarrolladores"> <strong>
+			IGLESIA CRISTIANA JESUS EL BUEN PASTOR MISIÓN BIBLICA MEXICANA</strong></p>
+      </div>
+      <p class="titulo">SISTEMA CONTROL OFRENDAS JOVENES CON PROPOSITO</p>
+       <label  class="err" id="usuario"></label> 
+      <img src="images/logo.png" width="40" height="40" class="logo-nav">
+    </nav>
+      
+
+	<form class="UI" id="InterfazUser">
+		
+	</form>
+<input id="Inpe" type="hidden">
+<input id="Ints" type="hidden">
+         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+          <script src="main.js?version"></script>
+          <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
+ <script src="//cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+  </body>
+</html>
